@@ -25,7 +25,6 @@ export const EmailDetail = () => {
   const handleCtrlDKeyPress = function (event) {
     if (event.ctrlKey && event.key === "d") {
       event.preventDefault();
-      // Call the function to handle delete functionality
       handleDeleteConfirmation();
     }
   };

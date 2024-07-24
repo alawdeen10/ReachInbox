@@ -2,7 +2,7 @@ import { Details } from "./Details";
 import { Inbox } from "./Inbox";
 import { EmailDetail } from "./EmailDetail";
 import { NoMail } from "./NoMail";
-import { useColorMode } from "@chakra-ui/react"; // Assuming "theme" is where you import useColorMode
+import { useColorMode } from "@chakra-ui/react";
 
 export const Content = ({ data, contentName }) => {
   const { colorMode } = useColorMode();

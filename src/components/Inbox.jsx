@@ -1,27 +1,12 @@
 import { MdRefresh } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 export const getDate = (data) => {
   let date = new Date(data);
   let temp = date.toDateString().split(" ");
   return `${temp[1]} ${temp[2]}`;
 };
-
-// const resetList = async(token) =>{
-//     try{
-//       const res = await axios.get(`https://hiring.reachinbox.xyz/api/v1/onebox/reset`,{
-//         headers: {
-//           Authorization: `Bearer ${token}`,
-//           "Content-Type": 'application/json'
-//         },
-//       })
-//       return res;
-//     }catch(err){
-//       console.log("data not fetched")
-//     }
-// }
 
 export const Inbox = ({ emails, colorMode }) => {
   const navigate = useNavigate();
@@ -38,7 +23,6 @@ export const Inbox = ({ emails, colorMode }) => {
           : "border-gray-700 bg-black text-white"
       }`}
     >
-      {/* top section */}
       <div className="flex justify-between items-center pb-2">
         <div
           className={`flex flex-col gap-2 items-center space-x-2 ${
@@ -71,7 +55,6 @@ export const Inbox = ({ emails, colorMode }) => {
         </div>
       </div>
 
-      {/* mid section */}
       <div className="space-y-2">
         <div className="px-2 py-1">
           <div
@@ -120,7 +103,6 @@ export const Inbox = ({ emails, colorMode }) => {
           </select>
         </div>
 
-        {/* Bottom section */}
         <div
           className={`border-t ${
             colorMode === "light" ? "border-gray-300" : "border-gray-700"
