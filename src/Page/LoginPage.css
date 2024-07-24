@@ -1,0 +1,121 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-header img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.login-box {
+  background: linear-gradient(138.97deg, #111214 5.16%, #121212 105.18%);
+  width: 460px;
+  height: 312px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid #343a40;
+}
+
+.google-signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #707172;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 380px;
+  height: 48px;
+  margin-top: 24px;
+}
+
+.google-signup-btn img {
+  margin-top: -2px;
+  margin-right: 12px;
+}
+
+.google-signup-btn:disabled {
+  cursor: not-allowed;
+}
+
+.create-account-btn {
+  background: linear-gradient(
+    91.73deg,
+    #4b63dd -2.99%,
+    rgba(5, 36, 191, 0.99) 95.8%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 195px;
+  height: 48px;
+  margin-top: 28px;
+}
+
+.signin-link {
+  text-decoration: none;
+  color: #c1c2c5;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+.login-box p {
+  margin-top: 24px;
+  color: #909296;
+}
+
+.login-footer {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #121212;
+}
+
+.login-footer p {
+  font-size: 12px;
+  color: #5c5f66;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
